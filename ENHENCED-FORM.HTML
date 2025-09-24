@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multi-Section Showcase</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2em;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header, section, footer {
+      margin-bottom: 2em;
+    }
+    h1, h2 {
+      color: #005a9c;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 1.5em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.6em;
+      text-align: left;
+    }
+    video {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1em;
+    }
+    form {
+      background-color: #fff;
+      padding: 1.5em;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    fieldset {
+      margin-bottom: 1.5em;
+      border: 1px solid #aaa;
+      padding: 1em;
+    }
+    legend {
+      font-weight: bold;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-top: 0.8em;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.3em;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 0.7em 1.2em;
+      background-color: #005a9c;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #004080;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌟 Welcome to Our Web Showcase</h1>
+    <p>This page demonstrates core HTML5 features including lists, tables, media, and a fully validated form.</p>
+  </header>
+
+  <section>
+    <h2>📋 Key Highlights</h2>
+    <ul>
+      <li>Semantic HTML5 structure</li>
+      <li>Accessible form with fieldsets and labels</li>
+      <li>Native validation—no JavaScript required</li>
+      <li>Responsive media integration</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📊 Plan Comparison Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Starter</th>
+          <th>Pro</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Storage</td>
+          <td>10 GB</td>
+          <td>1 TB</td>
+        </tr>
+        <tr>
+          <td>Support</td>
+          <td>Email</td>
+          <td>24/7 Chat & Email</td>
+        </tr>
+        <tr>
+          <td>Monthly Price</td>
+          <td>$0</td>
+          <td>$19.99</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>🎥 Product Demo</h2>
+    <p>Watch our quick introduction video:</p>
+    <video controls>
+      <source src="demo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section>
+    <h2>📝 Contact Us</h2>
+    <form action="/submit" method="post" novalidate>
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required minlength="3" />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="^\+?[0-9\s\-]{7,15}$" placeholder="+260123456789" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="plan">Select a Plan:</label>
+        <select id="plan" name="plan" required>
+          <option value="">--Choose--</option>
+          <option value="starter">Starter</option>
+          <option value="pro">Pro</option>
+        </select>
+
+        <label>
+          <input type="checkbox" name="newsletter" />
+          Subscribe to newsletter
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Message</legend>
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+      </fieldset>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Web Showcase Inc. | Designed with ❤️ in Zambia</p>
+  </footer>
+
+</body>
+</html>
